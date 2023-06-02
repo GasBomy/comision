@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 3vh 10vw;
+    justify-content: space-between;
+}
+
+
+header .navContainer .logoContainer{
+    width: 10.375rem;
+}
+
+
+header .navContainer .logoContainer img{
+    width: 100%;
+}
+
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: bold;
+    width: 6.25rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .25rem;
+}
+
+
+
+
+.navContainer nav{
+    display: flex;
+    gap: 3vw;
+}
+
+
+nav a:hover{
+    color: #485fc7;
+
+
+    background-color: #fafafa;
+}
+
+
+.buttonsContainer{
+    display: flex;
+    gap: 3vw;
+
+
+}
+
+
+.buttonsContainer button{
+    background-color: transparent;
+    color: #4a4a4a;
+    font-weight: bold;
+
+
+    border: solid .0625rem #dbdbdb;
+    border-radius: .25rem;
+    padding: .4375rem 1rem;
+    display: flex;
+    gap: .3125rem;
+    align-items: center;
+    font-size: 1rem;
+}
+.buttonsContainer button:hover{
+    border-color: #b5b5b5;
+}
+.buttonsContainer button i{
+    font-size: 1.25rem;
+}
+.btnMenu{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 100rem) {
+    .btnMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        font-size: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .buttonsContainer{
+        display: none;
+    }
+    .navContainer nav{
+        display: none;
+    }
+
+
+}
